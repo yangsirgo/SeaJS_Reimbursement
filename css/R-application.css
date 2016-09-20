@@ -1,0 +1,691 @@
+
+.app-header {
+    /*width: 210px;*/
+    height: 72px;
+    background-color:#539be9;
+    top: 0;
+    /*padding: 10px;*/
+    position: relative;
+}
+
+.app-header .nav {
+    display: inline-block;
+    /*height: 100%;*/
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: 31;
+}
+
+.app-header .nav li {
+    font-size: 14px;
+    float: left;
+    margin-left: 2px;
+    padding: 0 5px;
+    line-height: 25px;
+    position: relative;
+
+}
+.app-header .nav li.user-name{
+    margin-right: 26px;
+}
+.app-header .nav li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    display: block;
+    font-family: microsoft yahei;
+}
+
+.app-header .nav li.user-name i.user-pic{
+    position: absolute;
+    top: 9px;
+    right: -16px;
+    width: 13px;
+    height: 7px;
+    background-position: -10px -31px;
+    background-image: url("../images/newcoin.png");
+}
+.logo-link{
+    width: 268px;
+    display: inline-block;
+    line-height: 72px;
+    color: #fff;
+    text-align: center;
+    background-color: #539BE9;
+    font-size: 40px;
+    font-family: microsoft yahei;
+    letter-spacing: 1px;
+}
+
+/*以下部分是左边栏目*/
+.set-menu{
+    width: 164px;
+    background: #213346;
+    height: 737px;
+}
+
+#set-cont{
+    /*padding-bottom: 120px;*/
+    /*width: 100%;*/
+    margin: auto;
+    /*min-height: 800px;*/
+    /*height: 100%;*/
+}
+.header-menu{
+    color: #BDC2C8;
+    height: 56px;
+    position: relative;
+}
+.header-menu p{
+    line-height: 56px;
+    padding-left: 16px;
+}
+.header-menu span{
+    background: url("../images/newcoin.png") no-repeat -11px 2px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 19px;
+    right: 6px;
+    position: absolute;
+}
+.set-menu-ul li, .set-menu-ul>li>a {
+
+    /*line-height: 48px;*/
+    font-size: 16px;
+    color: #fff;
+}
+/*.set-menu-ul>li.true>a:first-child {*/
+/*/!*background: #2d3a48;*!/*/
+/*background: red;*/
+/*}*/
+.set-menu-ul>li>a.left-header{
+    height: 33px;
+    font-size: 16px;
+    padding-left: 14px;
+    background-color: #1E2F41;
+    line-height: 32px;
+    border-top: 1px solid #172534;
+    cursor: pointer;
+    /*border-top-width:1px;*/
+    /*border-top-style:solid;*/
+    /*border-top-color:#172534;*/
+}
+
+.set-menu-ul>li>a{
+    padding-left: 28px;
+    position: relative;
+    display: block;
+    color: #fff;
+}
+.set-menu-ul>li.true .menu-ul-ul {
+    display: block;
+}
+.menu-ul-ul {
+    display: none;
+}
+.menu-ul-ul li {
+    line-height: 27px;
+    font-size: 14px;
+    /*padding-left: 35px;*/
+}
+.menu-ul-ul li.first-li{
+    /*padding-top: 10px;*/
+}
+.menu-ul-ul li.first-li .button{
+    padding-top: 10px;
+}
+.menu-ul-ul li.first-li a{
+    padding-top: 10px;
+}
+
+.menu-ul-ul li.last-li{
+    margin-bottom: 7px;
+}
+.menu-ul-ul li a{
+    color:#7A8590;
+    display: inline-block;
+}
+.menu-ul-ul li a.true {
+    color: #fff;
+}
+
+.set-menu-ul .true .pic_14 {
+    background-position:-11px -14px;
+    width: 11px;
+    height: 6px;
+    top: 13px;
+    right: 9px;
+}
+
+.set-menu-ul .false .pic_14 {
+    background-position:16px -16px;
+    width: 11px;
+    height: 6px;
+    top: 13px;
+    right: 9px;
+}
+
+.pic {
+    background-image: url("../images/newcoin.png");
+    display: inline-block;
+}
+
+.set-menu-ul .pic {
+    position: absolute;
+}
+
+.menu-ul-ul li span.button.center_docu {
+    background-position: 15px -14px;
+}
+
+.menu-ul-ul li span.button.switch{
+    width: 24px;
+    height: 27px;
+}
+
+.menu-ul-ul li span.button{
+    line-height: 0;
+    margin: 0;
+    /*width: 16px;*/
+    /*height: 16px;*/
+    display: inline-block;
+    vertical-align: top;
+    /*vertical-align: middle;*/
+    border: 0 none;
+    cursor: pointer;
+    /*outline: none;*/
+    /*background-color: transparent;*/
+    background-repeat: no-repeat;
+    /*background-attachment: scroll;*/
+    background-image: url("../images/newcoin.png");
+}
+
+.menu-ul-ul li span.top_docu {
+    background-position: 15px -5px;
+}
+
+.menu-ul-ul li span.bottom_docu {
+    background-position: 15px -42px;
+}
+
+/*内容部分*/
+#content {
+    margin-left: 0;
+    overflow-y: scroll;
+    /*overflow-x: hidden;*/
+    height: 682px;
+    position: relative;
+}
+
+#content-size-OA{
+ margin-bottom: 20px;
+}
+
+.set-page-mbx .set-page-title {
+    line-height: 14px;
+    font-size: 14px;
+    padding-left: 29px;
+    display: block;
+    border-bottom: 1px solid #D3D6D9;
+    padding-bottom: 15px;
+    padding-top: 16px;
+}
+
+#container .pass-name {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FF9A34;
+    font-size: 18px;
+    line-height: 17px;
+}
+
+.process{
+    padding-top: 17px;
+    padding-left: 27px;
+}
+
+.process .process-inline{
+    margin-top: 20px;
+    width: 1125px;
+    height: 152px;
+    border:1px solid #CECED0;
+    padding: 20px;
+    background-color: #fff;
+    /*兼容ie7*/
+    position: relative;
+}
+.process .process-inline .process-tableline ul{
+    /*text-align: center;*/
+    /*position: relative;*/
+}
+
+
+
+.process-inline .process-tableline #first-li-block{
+    width: 162px;
+    height: 152px;
+    float: left;
+    margin-left: 174px;
+}
+
+.process-inline .process-tableline #last-li-block{
+    width: 162px;
+    height: 150px;
+    float: left;
+}
+
+
+.process-inline .process-tableline li.block-tableline{
+    width: 162px;
+    height: 150px;
+    float: left;
+}
+
+
+/*申请流程*/
+
+
+.process-tableline .up-li{
+    width: 162px;
+    height: 74px;
+    display: block;
+    border-bottom: 2px solid #949494;
+    /*position: relative;*/
+}
+.process-tableline .up-li i{
+    width: 54px;
+    height: 62px;
+    display: block;
+    margin: auto;
+}
+
+.process-tableline .up-li .accept-i{
+    background: url("../images/processcoin.png") no-repeat -10px -10px;
+}
+.process-tableline .up-li .refuse-i{
+    background: url("../images/processcoin.png") no-repeat -136px -10px;
+}
+.process-tableline .up-li .wait-i{
+     background: url("../images/processcoin.png") no-repeat -74px -10px;
+ }
+.process-tableline  #first-li-block em{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 185px;
+    top: 90px;
+    display: inline-block;
+    background: url("../images/processcoin.png") no-repeat -200px -10px;
+}
+.process-tableline  #last-li-block em{
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    right: 155px;
+    top: 90px;
+    display: inline-block;
+    background: url("../images/processcoin.png") no-repeat -202px -10px;
+}
+
+.process-tableline .down-li{
+    width: 162px;
+    height: 72px;
+    display: inline-block;
+    text-align: center;
+}
+
+.process-tableline .accept-ul{
+    color: #539CE9;
+}
+.process-tableline .refuse-ul{
+    color: #FE3640;
+}
+.process-tableline .wait-ul{
+    color: #929AA5;
+}
+.process-tableline .down-li li.down-li-first {
+    margin-top: 8px;
+}
+.process-tableline .down-li li{
+    padding-top: 6px;
+}
+
+.process-tableline .down-li li.down-li-last {
+    margin-bottom:6px;
+}
+
+.process .base-info{
+    margin-top: 20px;
+    width: 1165px;
+    height: 148px;
+    background-color: #fff;
+}
+
+
+.process .base-info tr{
+
+}
+
+.process .base-info td.odd-td{
+    width: 145px;
+    height: 34px;
+    color:#909DA6;
+    background-color:#FCFCFC;
+}
+.process .base-info td.even-td{
+    width: 435px;
+    height: 34px;
+    color:#203040;
+    background-color:#Fff;
+}
+
+.process .base-info .info-table{
+    BORDER-COLLAPSE: collapse;
+    cellSpacing:0;
+    align:center;
+    border:1px solid #E4E5E7;
+}
+.base-info .info-table select {
+    width: 256px;
+    height: 22px;
+    font-size: 12px;
+    color:#223347;
+}
+
+/*报销明细*/
+
+table{
+    border: 1px solid #d3D6D9;
+    border-collapse:collapse;
+}
+
+td{
+    border: 1px solid #d3D6D9;
+}
+
+.dashed-block{
+    /*border-right:1px solid #F3F4F6;*/
+    background-color:#ffffff;
+}
+
+#tabs{
+    margin-top: 18px;
+    background-color:#ffffff;
+}
+
+.process .person-tabs li{
+    float: left;
+}
+
+.process .person-tabs .person-tabs-ul{
+    /*min-width: 200px;*/
+    /*height:28px;*/
+    display: inline-block;
+    zoom:1;*display:inline;
+    border: 1px solid #E0E1E3;
+    border-bottom: 0;
+    max-width: 1165px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    /*border: 1px solid red;*/
+    border-bottom: 0;
+    background: #539AE8;
+    font-weight: normal;
+    color: #fff;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: left;
+    padding: 7px 28px;
+    text-decoration: none;
+}
+
+#tabs a.ui-tabs-anchor{
+    width: 56px;
+    padding: 7px 10px 7px 28px;
+}
+
+
+/*报销人1 span设置*/
+.apply-person{
+    width: 16px;
+    height: 16px;
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+}
+
+
+.person-tabs .person-tabs-table {
+    width: 1165px;
+    align:center;
+    margin-bottom: 10px;
+}
+
+.person-tabs .person-tabs-table tr{
+    height:35px;
+}
+.person-tabs .person-tabs-table td{
+    width: 1165px;
+}
+
+.person-tabs .person-tabs-table .odd-tr-tbody{
+    background-color: #fff;
+    color: #223347;
+}
+
+.person-tabs .person-tabs-table .odd-tr-tbody td{
+    padding-left: 14px;
+}
+
+.person-tabs .person-tabs-table .even-tr-tbody{
+    background-color: #FCFCFC;
+    color: #919AA3;
+}
+.person-tabs .person-tabs-table .even-tr-tbody .fontColor-set{
+    color: #223347;
+}
+
+
+/*发票信息*/
+.person-tabs .add-bill-table {
+    width: 1165px;
+    align:center;
+    margin-bottom: 10px;
+}
+
+.person-tabs .add-bill-table tr{
+    height:35px;
+}
+.person-tabs .add-bill-table td{
+    width: 194px;
+}
+
+.person-tabs .add-bill-table .odd-tr-tbody{
+    background-color: #fff;
+    color: #223347;
+
+}
+
+.person-tabs .add-bill-table .odd-tr-tbody td{
+    padding-left: 14px;
+}
+
+.person-tabs .add-bill-table div{
+
+}
+
+.person-tabs .add-bill-table div select{
+    width: 178px;
+    height: 22px;
+    font-size: 12px;
+}
+
+.person-tabs .add-bill-table .even-tr-tbody{
+    background-color: #FCFCFC;
+    color: #919AA3;
+}
+.person-tabs .add-bill-table .even-tr-tbody .fontColor-set{
+    color: #223347;
+}
+
+.person-tabs .add-bill-table .even-tr-tbody .ipt-td-tbody{
+    /*内有border 1px*/
+    width: 174px;
+    height: 18px;
+}
+
+#content-size-OA .process .all-total{
+    width: 1165px;
+    padding-top: 7px;
+    margin-bottom:11px;
+    text-align: right;
+}
+
+#content-size-OA .process .btn{
+    width: 1165px;
+    text-align: right;
+}
+
+#content-size-OA .process .btn button{
+    width: 98px;
+    height: 34px;
+    background-color: #539AE8;
+    color: #fff;
+}
+
+#content-size-OA .bottom-btn{
+    width: 1165px;
+    margin-bottom: 42px;
+}
+
+#content-size-OA .bottom-btn button{
+    width: 142px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #539be9;
+    margin-left: 70px;
+    color: #fff;
+}
+#content-size-OA .bottom-btn button a{
+    color: #fff;
+}
+
+#content-size-OA .bottom-btn .set-first-btn{
+    margin-left: 240px;
+}
+
+.add-bill-table .action_coin span.fl {
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    margin-right: 15px;
+    width:100%;
+    overflow:hidden;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.add-bill-table td.action_coin{
+    border-left:0 ;
+}
+
+
+.add-bill-table .action_coin span.add_coin{
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    position: relative;
+    /*right: -1010px;*/
+    margin-right: 15px;
+    cursor: pointer;
+    overflow:hidden;
+    width: 20px;
+    height: 20px;
+    float:right;
+    background-image: url("../images/zengjia.jpg");
+}
+.add-bill-table .action_coin span.delete_coin{
+    display: inline-block;
+    zoom:1;
+    *display:inline;
+    position: relative;
+    /*right: -1010px;*/
+    margin-right: 15px;
+    cursor: pointer;
+    overflow:hidden;
+    width: 20px;
+    height: 20px;
+    float:right;
+    background-image: url("../images/jianhao.jpg");
+}
+
+/*汇率*/
+
+.rel {
+    position: relative;
+}
+
+
+.helper {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.helper i {
+    color: #fff;
+    background: url('../images/u817.png')no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 15px;
+    height: 15px;
+    left: -1px;
+    position: absolute;
+    top: -4px;
+    z-index: 9;
+    /*padding: 0px 20px;*/
+}
+
+.helper .helpertext {
+
+    border: 1px solid rgb(207, 208, 208);
+    color: rgb(255, 105, 14);
+    width: 200px;
+    background: #fff0d1;
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    display: none;
+    z-index: 10;
+    text-align: left;
+    border-radius: 3px;
+    word-break: break-all;
+    box-shadow: rgb(197, 198, 199) 2px 2px 2px -1px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

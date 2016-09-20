@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>爱卡汽车OA系统--申请报销</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/R-application.css"/>
+    <link rel="stylesheet" href="./css/tabs.css"/>
+    <link rel="stylesheet" href="./css/datepick.css"/>
+    <meta charset="UTF-8">
+    <style>
+        /*设置datepicker的相对位置*/
+        .ui-datepicker {
+            margin-top: 46px;
+            z-index: 1000;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="app-header">
+                <a href="./index.html" class="fz22 logo-link tcenter">爱卡OA系统</a>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="./index.html">返回首页</a>
+                        </li>
+                        <li class="user-name">
+                            <a href="#">韩寒<i class="user-pic"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="set-menu fl">
+            <div class="header-menu">
+                <p class="fz16 cs">自定义菜单</p>
+                <span></span>
+            </div>
+            <div>
+                <ul id="js_left_menu" class="set-menu-ul">
+                    <li class="true ex">
+                        <a href="javascript:void(0)" class="fz20 left-header first_A"><i class="pic pic_14"></i>流程中心</a>
+                        <ul class="menu-ul-ul">
+                            <li class="first-li"><span class="button top_docu switch"></span><a class="true" href="./index.html">发起申请</a>
+                            </li>
+                            <li><span class="button center_docu switch"></span><a class="false" href="./myApplication.html">我的申请</a>
+                            </li>
+                            <li><span class="button center_docu switch"></span><a class="false" href="./myShenPi.html">待审批</a>
+                            </li>
+                            <li class="last-li"><span class="button bottom_docu switch"></span><a class="false" href="./cwSP.html">已审批</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="set-page-mbx">
+                <span class="set-page-title">当前位置：首页<span style="font-family: 'microsoft yahei'">&nbsp;&gt;&nbsp;</span>发起申请<span style="font-family: 'microsoft yahei'">&nbsp;&gt;&nbsp;</span>报销申请</span>
+            </div>
+            <div id="content-size-OA">
+                <div class="process">
+                    <span class="pass-name">报销申请</span>
+                    <div class="process-inline">
+                        <div class="process-tableline">
+                            <ul>
+                                <li class="block-tableline" id="first-li-block">
+                                    <span class="up-li">
+                                        <i class="accept-i"></i>
+                                        <em></em>
+                                    </span>
+                                    <ul class="down-li accept-ul">
+                                        <li class="down-li-first">2016.07.15</li>
+                                        <li>10:26</li>
+                                        <li class="down-li-last">发起申请</li>
+                                    </ul>
+                                </li>
+                                <li class="block-tableline">
+                                    <span class="up-li">
+                                        <i class="accept-i"></i>
+                                    </span>
+                                    <ul class="down-li accept-ul">
+                                        <li class="down-li-first">XX经过审核</li>
+                                    </ul>
+                                </li>
+                                <li class="block-tableline">
+                                    <span class="up-li">
+                                        <i class="refuse-i"></i>
+                                    </span>
+                                    <ul class="down-li refuse-ul">
+                                        <li class="down-li-first">XX驳回审核</li>
+                                    </ul>
+                                </li>
+                                <li class="block-tableline">
+                                    <span class="up-li">
+                                        <i class="wait-i"></i>
+                                    </span>
+                                    <ul class="down-li wait-ul">
+                                        <li class="down-li-first">待XX审核</li>
+                                    </ul>
+                                </li>
+                                <li class="block-tableline" id="last-li-block">
+                                    <span class="up-li">
+                                        <i class="wait-i"></i>
+                                        <em></em>
+                                    </span>
+                                    <ul class="down-li wait-ul">
+                                        <li class="down-li-first">待XX审核</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="process">
+                    <span class="pass-name">基本信息</span>
+                    <div class="base-info">
+                        <TABLE class="info-table" cellSpacing=0 border=1 borderColor=#E4E5E7>
+                            <TBODY>
+                            <TR>
+                                <TD class="odd-td" width=100>
+                                    <DIV align=center>申请人</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>韩寒</DIV></TD>
+                                <TD class="odd-td" width=100>
+                                    <DIV align=center>员工编号</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>100028</DIV></TD>
+                            </TR>
+                            <TR>
+                                <TD  class="odd-td" width=100>
+                                    <DIV align=center>所属部门</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>市场部</DIV></TD>
+                                <TD class="odd-td" width=100>
+                                    <DIV align=center>分组</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>无</DIV></TD>
+                            </TR>
+                            <TR>
+                                <TD class="odd-td" width=100>
+                                    <DIV align=center>职位</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>商务主管</DIV></TD>
+                                <TD class="odd-td" width=100>
+                                    <DIV align=center>分机</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>1000</DIV></TD>
+                            </TR>
+                            <TR>
+                                <TD class="odd-td" width=100>
+                                    <DIV align=center>申请类型</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>个人日常</DIV></TD>
+                                <TD class="odd-td" width=100>
+                                    <DIV align=center>发票抬头</DIV></TD>
+                                <TD class="even-td" width=100>
+                                    <DIV align=center>
+                                    <select name="cars">
+                                        <option value="yw">塞纳德</option>
+                                        <option value="saab">Saab</option>
+                                    </select></DIV></TD>
+                            </TR>
+                            </TBODY>
+                        </TABLE>
+                    </div>
+                </div>
+                <div class="process">
+                    <span class="pass-name">报销明细</span>
+                    <div id="tabs" class="person-tabs">
+                        <ul class="person-tabs-ul">
+                            <li><a href="#tabs-1">报销人1</a><span class="apply-person" role="presentation"></span></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <TABLE class="person-tabs-table" style="BORDER-COLLAPSE: collapse" borderColor=#E4E5E7 cellSpacing=0 border=1>
+                                <TBODY>
+                                <TR class="odd-tr-tbody">
+                                    <TD colSpan=6>
+                                        <DIV align=left>报销信息</DIV></TD>
+                                </TR>
+                                <TR class="even-tr-tbody">
+                                    <TD width=100>
+                                        <DIV align=center>单据日期</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody" id="date_1"></DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>报销编号</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center class="fontColor-set">20160716001</DIV></TD>
+                                    <TD width=100 colSpan=2 class="dashed-block">
+                                        <DIV align=center></DIV></TD>
+                                </TR>
+                                <TR class="odd-tr-tbody">
+                                    <TD colSpan=6>
+                                        <DIV align=left>报销人信息</DIV></TD>
+                                </TR>
+                                <TR class="even-tr-tbody">
+                                    <TD>
+                                        <DIV align=center>报销人</DIV></TD>
+                                    <TD>
+                                        <DIV align=center  class="fontColor-set"><input type="text" class="ipt-td-tbody"></DIV></TD>
+                                    <TD>
+                                        <DIV align=center>报销人开户行</DIV></TD>
+                                    <TD>
+                                        <DIV align=center  class="fontColor-set">招商银行XX支行</DIV></TD>
+                                    <TD>
+                                        <DIV align=center>报销人账号</DIV></TD>
+                                    <TD>
+                                        <DIV align=center class="fontColor-set">6230431271237124</DIV></TD>
+                                </TR>
+                                </TBODY>
+                            </TABLE>
+                            <TABLE class="add-bill-table" style="BORDER-COLLAPSE: collapse" borderColor=#E4E5E7 cellSpacing=0 border=1>
+                                <TBODY>
+                                <TR class="odd-tr-tbody">
+                                    <TD colSpan=5 class="action_coin" style="border-right:0">
+                                        <span class="fl">发票信息</span></TD>
+                                    <td class="action_coin" style="border-left:0"><span class="delete_coin" style="visibility: hidden"></span><span class="add_coin"></span></td>
+                                </TR>
+                                <TR class="even-tr-tbody">
+                                    <TD width=100>
+                                        <DIV align=center>报销项目</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center class="fontColor-set">
+                                            <select name="cars">
+                                                <option value="yw">业务招待费</option>
+                                                <option value="saab">Saab</option>
+                                            </select>
+                                        </DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>报销类型</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center class="fontColor-set">
+                                            <select name="cars">
+                                                <option value="yw">业务招待费</option>
+                                                <option value="saab">Saab</option>
+                                            </select>
+                                        </DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>电子发票</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>
+                                            <select name="cars" class="e-invoice">
+                                                <option value="yes" test-invoice="yes">是</option>
+                                                <option value="no"  test-invoice="no">否</option>
+                                            </select>
+                                        </DIV></TD>
+                                </TR>
+                                <TR class="even-tr-tbody ipt-parent">
+                                    <TD width=100>
+                                        <DIV align=center>电子发票号</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center class="fontColor-set">
+                                            <input type="text" class="ipt-td-tbody"/>
+                                        </DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>发票类型</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center class="fontColor-set">
+                                            <select name="cars"  class="special-invoice">
+                                                <option value="yw" special-invoice="yes">增值税专用发票</option>
+                                                <option value="saab" special-invoice="no">普通发票</option>
+                                            </select>
+                                        </DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>税率</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center  class="tax-rate">
+                                            <select name="cars" >
+                                                <option value="none">无</option>
+                                                <option value="yw">3%</option>
+                                                <option value="yw">6%</option>
+                                                <option value="yw">11%</option>
+                                                <option value="saab">17%</option>
+                                            </select>
+                                        </DIV></TD>
+                                </TR>
+                                <TR class="even-tr-tbody">
+                                    <TD width=100>
+                                        <DIV align=center>币种</DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center class="fontColor-set">
+                                            <select name="cars" class="currency">
+                                                <option value="yw" rmb="yes">人民币</option>
+                                                <option value="saab" rmb="no">美元</option>
+                                            </select>
+                                        </DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>
+                                            <span>汇率</span>
+                                            <span class="rel">
+                                                 <div class="helper">
+                                                     <i class="helper_i"></i>
+                                                     <div class="helpertext" style="margin-top: -29px;padding: 5px;line-height: 15px;width: 245px">
+                                                         提示：输入到小数点后两位。请查看今天汇率
+                                                         <em class="em1" style="top: 43px;">
+                                                             <em class="em2"></em>
+                                                         </em>
+                                                     </div>
+                                                 </div>
+                                            </span>
+                                        </DIV></TD>
+                                    <TD width=100 class="ex-rate">
+                                        <DIV align=center><input type="text" class="ipt-td-tbody ipt_target" disabled="disabled"/></DIV></TD>
+                                    <TD width=100>
+                                        <DIV align=center>申请金额</DIV></TD>
+                                    <TD width=100 class="ex-application">
+                                        <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody ipt_target"/></DIV></TD>
+                                </TR>
+                                <TR class="even-tr-tbody">
+                                    <TD width=100>
+                                        <DIV align=center>人民币金额</DIV></TD>
+                                    <TD width=100  class="RMB-total">
+                                        <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody" disabled="disabled"/></DIV></TD>
+                                    <TD width=100 colspan=4>
+                                        <DIV align=center></DIV></TD>
+                                </TR>
+                                </TBODY>
+                            </TABLE>
+                            <p class="all-total">报销总计:<span>0</span></p>
+                            <!--<div class="btn"><button class="add-billinfo">新增发票信息</button></div>-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom-btn">
+                    <button class="set-first-btn">保存草稿</button>
+                    <button id="add-pillperson">新增报销人</button>
+                    <button><a href="./Rtj_filllist.html">下一步</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./javascript/plugins/jquery-1.7.1.min.js"></script>
+<script src="javascript/activity/common.js"></script>
+<script src="javascript/plugins/jquery-ui.js"></script>
+<script src="javascript/plugins/template-native.js"></script>
+<script src="javascript/activity/alert.js"></script>
+<script id="template-person" type="text/html">
+    <TABLE class="person-tabs-table" style="BORDER-COLLAPSE: collapse" borderColor=#E4E5E7 cellSpacing=0 border=1>
+        <TBODY>
+        <TR class="odd-tr-tbody">
+            <TD colSpan=6>
+                <DIV align=left>报销信息</DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD width=100>
+                <DIV align=center>单据日期</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody" id=<%=date%>></DIV></TD>
+            <TD width=100>
+                <DIV align=center>报销编号</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">20160716001</DIV></TD>
+            <TD width=100 colSpan=2 class="dashed-block">
+                <DIV align=center></DIV></TD>
+        </TR>
+        <TR class="odd-tr-tbody">
+            <TD colSpan=6>
+                <DIV align=left>报销人信息</DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD>
+                <DIV align=center>报销人</DIV></TD>
+            <TD>
+                <DIV align=center  class="fontColor-set"><input type="text" class="ipt-td-tbody"></DIV></TD>
+            <TD>
+                <DIV align=center>报销人开户行</DIV></TD>
+            <TD>
+                <DIV align=center  class="fontColor-set">招商银行XX支行</DIV></TD>
+            <TD>
+                <DIV align=center>报销人账号</DIV></TD>
+            <TD>
+                <DIV align=center class="fontColor-set">6230431271237124</DIV></TD>
+        </TR>
+        </TBODY>
+    </TABLE>
+    <TABLE class="add-bill-table" style="BORDER-COLLAPSE: collapse" borderColor=#E4E5E7 cellSpacing=0 border=1>
+        <TBODY>
+        <TR class="odd-tr-tbody">
+            <TD colSpan=5 class="action_coin" style="border-right:0">
+                <span class="fl">发票信息</span></TD>
+            <td class="action_coin" style="border-left:0"><span class="delete_coin" style="visibility: hidden"></span><span class="add_coin"></span></td>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD width=100>
+                <DIV align=center>报销项目</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars">
+                        <option value="yw">业务招待费</option>
+                        <option value="saab">Saab</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>报销类型</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars">
+                        <option value="yw">业务招待费</option>
+                        <option value="saab">Saab</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>电子发票</DIV></TD>
+            <TD width=100>
+                <DIV align=center>
+                    <select name="cars" class="e-invoice">
+                        <option value="yes" test-invoice="yes">是</option>
+                        <option value="no"  test-invoice="no">否</option>
+                    </select>
+                </DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody ipt-parent">
+            <TD width=100>
+                <DIV align=center>电子发票号</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <input type="text" class="ipt-td-tbody"/>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>发票类型</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars"  class="special-invoice">
+                        <option value="yw" special-invoice="yes">增值税专用发票</option>
+                        <option value="saab" special-invoice="no">普通发票</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>税率</DIV></TD>
+            <TD width=100>
+                <DIV align=center  class="tax-rate">
+                    <select name="cars" >
+                        <option value="yw">无</option>
+                        <option value="yw">3%</option>
+                        <option value="yw">6%</option>
+                        <option value="yw">11%</option>
+                        <option value="saab">17%</option>
+                    </select>
+                </DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD width=100>
+                <DIV align=center>币种</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars" class="currency">
+                        <option value="yw" rmb="yes">人民币</option>
+                        <option value="saab" rmb="no">美元</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>
+                    <span>汇率</span>
+                                            <span class="rel">
+                                                 <div class="helper">
+                                                     <i class="helper_i"></i>
+                                                     <div class="helpertext" style="margin-top: -29px;padding: 5px;line-height: 15px;width: 245px">
+                                                         提示：输入到小数点后两位。请查看今天汇率
+                                                         <em class="em1" style="top: 43px;">
+                                                             <em class="em2"></em>
+                                                         </em>
+                                                     </div>
+                                                 </div>
+                                            </span>
+                </DIV></TD>
+            <TD width=100 class="ex-rate">
+                <DIV align=center><input type="text" class="ipt-td-tbody ipt_target" disabled="disabled"/></DIV></TD>
+            <TD width=100>
+                <DIV align=center>申请金额</DIV></TD>
+            <TD width=100 class="ex-application">
+                <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody ipt_target"/></DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD width=100>
+                <DIV align=center>人民币金额</DIV></TD>
+            <TD width=100 class="RMB-total">
+                <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody" disabled="disabled"/></DIV></TD>
+            <TD width=100 colspan=4>
+                <DIV align=center></DIV></TD>
+        </TR>
+        </TBODY>
+    </TABLE>
+    <p class="all-total">报销总计:<span>0</span></p>
+</script>
+<script id="template-billinfo" type="text/html">
+    <TABLE class="add-bill-table" style="BORDER-COLLAPSE: collapse" borderColor=#E4E5E7 cellSpacing=0 border=1>
+        <TBODY>
+        <TR class="odd-tr-tbody">
+            <TD colSpan=5 class="action_coin" style="border-right:0">
+                <span class="fl">发票信息</span></TD>
+            <td class="action_coin" style="border-left:0"><span class="delete_coin"></span><span class="add_coin"></span></td>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD width=100>
+                <DIV align=center>报销项目</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars">
+                        <option value="yw">业务招待费</option>
+                        <option value="saab">Saab</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>报销类型</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars">
+                        <option value="yw">业务招待费</option>
+                        <option value="saab">Saab</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>电子发票</DIV></TD>
+            <TD width=100>
+                <DIV align=center>
+                    <select name="cars" class="e-invoice">
+                        <option value="yes" test-invoice="yes">是</option>
+                        <option value="no"  test-invoice="no">否</option>
+                    </select>
+                </DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody ipt-parent">
+            <TD width=100>
+                <DIV align=center>电子发票号</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <input type="text" class="ipt-td-tbody"/>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>发票类型</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars" class="special-invoice">
+                        <option value="yw" special-invoice="yes">增值税专用发票</option>
+                        <option value="saab" special-invoice="no">普通发票</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>税率</DIV></TD>
+            <TD width=100>
+                <DIV align=center  class="tax-rate">
+                    <select name="cars">
+                        <option value="yw">无</option>
+                        <option value="yw">3%</option>
+                        <option value="yw">6%</option>
+                        <option value="yw">11%</option>
+                        <option value="saab">17%</option>
+                    </select>
+                </DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD width=100>
+                <DIV align=center>币种</DIV></TD>
+            <TD width=100>
+                <DIV align=center class="fontColor-set">
+                    <select name="cars" class="currency">
+                        <option value="yw" rmb="yes">人民币</option>
+                        <option value="saab" rmb="no">美元</option>
+                    </select>
+                </DIV></TD>
+            <TD width=100>
+                <DIV align=center>
+                    <span>汇率</span>
+                                            <span class="rel">
+                                                 <div class="helper">
+                                                     <i class="helper_i"></i>
+                                                     <div class="helpertext" style="margin-top: -29px;padding: 5px;line-height: 15px;width: 245px">
+                                                         提示：输入到小数点后两位。请查看今天汇率
+                                                         <em class="em1" style="top: 43px;">
+                                                             <em class="em2"></em>
+                                                         </em>
+                                                     </div>
+                                                 </div>
+                                            </span>
+                </DIV></TD>
+            <TD width=100 class="ex-rate">
+                <DIV align=center><input type="text" class="ipt-td-tbody ipt_target" disabled="disabled"/></DIV></TD>
+            <TD width=100>
+                <DIV align=center>申请金额</DIV></TD>
+            <TD width=100 class="ex-application">
+                <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody ipt_target"/></DIV></TD>
+        </TR>
+        <TR class="even-tr-tbody">
+            <TD width=100>
+                <DIV align=center>人民币金额</DIV></TD>
+            <TD width=100  class="RMB-total">
+                <DIV align=center class="fontColor-set"><input type="text" class="ipt-td-tbody" disabled="disabled"/></DIV></TD>
+            <TD width=100 colspan=4>
+                <DIV align=center></DIV></TD>
+        </TR>
+        </TBODY>
+    </TABLE>
+</script>
+<script>
+    $(function() {
+        //初始情况下 人民币 汇率是disabled
+        $("table").find(".ex-rate .ipt-td-tbody").attr("disabled","disabled");
+
+
+        if( $("#date_1").datepicker){
+            $("#date_1").datepicker({
+                calendarParent:'.process'
+            });
+        }
+
+        //设置tabs-x 背景颜色
+        $("div[role='tabpanel']").css({"background-color":"#fff"})
+
+        /*
+        * 报销明细中的新增报销人功能
+        */
+
+        var tabTemplate = "<li><a href='#{href}'>#{label}</a><span class='ui-icon ui-icon-close' role='presentation'></span></li>",
+                tabCounter = 2;
+        var tabs = $( "#tabs" ).tabs();
+
+        // 实际的 addTab 函数：使用上面表单的输入添加新的标签页
+        function addTab(){
+            var string = "date_"+tabCounter;
+            var data = {
+                date:"date_"+tabCounter
+            };
+            var html_addperson = template('template-person', data);
+            var label = "报销人" + tabCounter,
+                    id = "tabs-" + tabCounter,
+                    li = $( tabTemplate.replace( /#\{href\}/g, "#" + id ).replace( /#\{label\}/g, label ) ),
+                    tabContentHtml = html_addperson;
+            tabs.find( ".ui-tabs-nav" ).append( li );
+            tabs.append( "<div id='" + id + "'>" + tabContentHtml + "</div>" );
+            tabs.tabs( "refresh" );
+            if($("#"+string).datepicker){
+                $("#"+string).datepicker({
+                   calendarParent:'.process'
+                });
+            }
+            tabCounter++;
+        }
+        // addTab 按钮：值打开对话框
+        $( "#add-pillperson" )
+                .button()
+                .click(function() {
+                    addTab();
+                    //新增报销人的背景颜色设置tabs-x 背景颜色
+                    $("div[role='tabpanel']").css({"background-color":"#fff"})
+                });
+        // 关闭图标：当点击时移除标签页
+        tabs.delegate( "span.ui-icon-close", "click", function() {
+            var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
+            $( "#" + panelId ).remove();
+            tabs.tabs( "refresh" );
+        });
+
+
+        /*
+        * 验证发票为否，input是disabled
+        * */
+        $("#tabs").on("change","select",function(){
+            //电子发票是disabled
+            var result = $(this).find("option:selected").attr("test-invoice");
+            //验证发票类型普通发票，税率是disabled
+            var invoice_type = $(this).find("option:selected").attr("special-invoice");
+            //验证币种是人民币，汇率是disabled
+            var curr = $(this).find("option:selected").attr("rmb");
+
+            if(result=="no"){
+                $(this).parents(".add-bill-table").find(".ipt-parent .ipt-td-tbody").attr("disabled","disabled").val("");
+            }else if(result=="yes"){
+                $(this).parents(".add-bill-table").find(".ipt-parent .ipt-td-tbody").removeAttr("disabled");
+            }
+
+            if(invoice_type=="no"){
+                $(this).parents(".add-bill-table").find(".tax-rate select").attr("disabled","disabled").val("none");
+            }else if(invoice_type=="yes"){
+                $(this).parents(".add-bill-table").find(".tax-rate select").removeAttr("disabled");
+            }
+
+            if(curr=="yes"){
+                $(this).parents(".add-bill-table").find(".ex-rate .ipt-td-tbody").attr("disabled","disabled").val("");
+            }else if(curr=="no"){
+                $(this).parents(".add-bill-table").find(".ex-rate .ipt-td-tbody").removeAttr("disabled");
+            }
+        });
+
+
+        //新增和删除发票信息
+        $("#tabs").on("click",".add_coin" ,function () {
+            var data = {
+                value: ''
+            };
+            var html_addpillinfo = template('template-billinfo', data);
+            $(".all-total").before(html_addpillinfo);
+        });
+        $("#tabs").on("click",".add-bill-table span.delete_coin" ,function () {
+            var parent = $(this).parent().parent().parent().parent().parent();
+            $(this).parents(".add-bill-table").remove();
+            totalSouFund(parent,1);
+        });
+
+        //helper 按钮 鼠标经过事件
+        $("#tabs").on("mouseover","i.helper_i",function(){
+            $(this).parent().find(".helpertext").css("display","block");
+        })
+        $("#tabs").on("mouseout","i.helper_i",function(){
+            $(this).parent().find(".helpertext").css("display","none");
+        })
+
+
+        //费用总计
+        //人民币金额 判断
+        $("#tabs").on("keyup",".add-bill-table input.ipt_target",function(){
+            getNumValue($(this));
+            RMBtotalFund($(this));
+            totalSouFund($(this),0);
+        })
+
+        function RMBtotalFund(target_ipt){
+            var totalSou = 0;
+            //人民币金额对象
+            var RMB_ipt = target_ipt.parents(".add-bill-table").find(".RMB-total .ipt-td-tbody");
+            //申请金额对象
+            var apllicaiton_ipt = target_ipt.parents(".add-bill-table").find(".ex-application .ipt-td-tbody");
+            //   汇率对象
+            var ex_rate =target_ipt.parents(".add-bill-table").find(".ex-rate .ipt-td-tbody");
+            //申请金额取值
+            var apllicaiton_num =apllicaiton_ipt.val();
+            if(typeof(ex_rate.attr("disabled"))=="undefined"){
+                var str = ex_rate.val();
+                var totalSou = apllicaiton_ipt.val()*(str);//计算式
+                RMB_ipt.val(Number(totalSou.toFixed(4)));
+            }else{
+                RMB_ipt.val(apllicaiton_num);
+            }
+        }
+        function totalSouFund(target_ipt,type) {
+            var totalSou = 0;
+            if(type==0){
+                var RMB_total_ipt = target_ipt.parent().parent().parent().parent().parent().parent().find("td.RMB-total");
+                var all_total_p = target_ipt.parents("div[role='tabpanel']").find(".all-total span");
+            }else if(type==1){
+                var RMB_total_ipt = target_ipt.find("td.RMB-total");
+                var all_total_p = target_ipt.find(".all-total span");
+            }
+
+
+            RMB_total_ipt.each(function (index,element) {
+                totalSou += getNumValue($(this).find("input.ipt-td-tbody"));
+                all_total_p.html(Number(totalSou.toFixed(4)));
+            });
+        }
+        function getNumValue(controlid) {
+            var num = controlid.val();
+            if (validateInput(num)) {
+                num = parseFloat(num);
+            }
+            else {
+                controlid.val("");
+                num = 0;
+            }
+            return num;
+        }
+        function validateInput(inputstr) {
+            var flag = false;
+            if (inputstr != "") {
+                if (isNaN(inputstr)) {
+                    flag = false; //如果输入字符不是数字
+                }
+                else {//输入数字但是小于0
+                    if (parseFloat(inputstr) < 0)
+                        flag = false;
+                    else
+                        flag = true;
+                }
+            }
+            return flag;
+        }
+        //汇率是两位小数
+        $("#tabs").on("blur",".ex-rate input.ipt_target",function(){
+            var b = $(this).val();
+            if(validateInput(b)){
+                $(this).val(parseFloat(b).toFixed(2));
+            }else{
+                $(this).val("");
+            }
+
+        })
+
+    });
+</script>
+</html>

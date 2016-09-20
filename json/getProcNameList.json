@@ -1,0 +1,38 @@
+{
+  "code": "0001",
+  "body": [
+    {
+      "name": "流程中心",
+      "url": "wwwww",
+      "pageUrl": null,
+      "id": 1,
+      "items": [
+        {
+          "name": "发起申请",
+          "url": "",
+          "pageUrl":" ./index.html",
+          "id": 2,
+          "items": [ ]
+        },{
+          "name": "我的申请",
+          "url": "",
+          "pageUrl":"./myApplication.html",
+          "id": 2,
+          "items": [ ]
+        },{
+          "name": "待审批",
+          "url": "",
+          "pageUrl": "./myShenPi.html",
+          "id": 2,
+          "items": [ ]
+        },{
+          "name": "已审批",
+          "url": "",
+          "pageUrl": "./cwSP.html",
+          "id": 2,
+          "items": [ ]
+        }
+      ]
+    }
+  ]
+}

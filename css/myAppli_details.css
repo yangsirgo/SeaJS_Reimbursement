@@ -1,0 +1,42 @@
+
+.person-tabs .detail_table {
+    width: 1165px;
+    align: center;
+    margin-bottom: 10px;
+}
+
+.person-tabs .detail_table tr {
+    height: 35px;
+}
+
+.person-tabs .detail_table td {
+    /* width: 194px; */
+}
+
+.xuhao_num{
+width: 81px;
+}
+.baoxiaoren_num{
+width: 190px;
+}
+
+
+.person-tabs .detail_table tr.title_total{
+    height: 50px;
+}
+
+.title_total h2{
+    font-size: 18px;
+    text-align: center;
+    color: #203040;
+    padding-top: 16px;
+}
+
+.title_total .number_bx{
+    margin: 5px;
+}
+
+.person-tabs .detail_table .even-tr-tbody div{
+    background-color: #FCFCFC;
+    color: #919AA3;
+}
